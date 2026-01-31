@@ -3,14 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bizuterrier</title>
+<title>Bizuterrier – Salon Pielęgnacji Psów</title>
 
 <style>
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #ffffff;
-  color: #222;
+  background: #000;
+  color: #eee;
+}
+
+/* GOLD */
+:root {
+  --gold: #d4af37;
 }
 
 /* HERO */
@@ -22,17 +27,18 @@ body {
   width: 90%;
   max-width: 350px;
   border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 25px rgba(212,175,55,0.3);
 }
 .hero h1 {
   margin-top: 25px;
   font-size: 2rem;
   font-weight: bold;
+  color: var(--gold);
 }
 .hero p {
   margin-top: 10px;
   font-size: 1.1rem;
-  color: #555;
+  color: #ccc;
 }
 
 /* KARTY */
@@ -42,15 +48,17 @@ body {
   gap: 20px;
 }
 .card {
-  background: #f8f8f8;
+  background: #111;
   padding: 20px;
   border-radius: 12px;
   text-align: center;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  border: 1px solid rgba(212,175,55,0.3);
+  box-shadow: 0 2px 15px rgba(212,175,55,0.15);
 }
 .card h3 {
   margin-bottom: 10px;
   font-size: 1.2rem;
+  color: var(--gold);
 }
 
 /* SLIDER */
@@ -66,7 +74,7 @@ body {
   max-width: 260px;
   border-radius: 12px;
   scroll-snap-align: center;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 20px rgba(212,175,55,0.25);
 }
 
 /* OPINIE */
@@ -74,12 +82,13 @@ body {
   padding: 40px 20px;
 }
 .testimonial {
-  background: #f2f2f2;
+  background: #111;
   padding: 20px;
   border-radius: 12px;
   margin-bottom: 15px;
   font-style: italic;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  border: 1px solid rgba(212,175,55,0.3);
+  box-shadow: 0 2px 15px rgba(212,175,55,0.15);
 }
 
 /* KONTAKT */
@@ -91,11 +100,12 @@ body {
   display: block;
   margin: 10px 0;
   padding: 15px;
-  background: #000;
-  color: white;
+  background: var(--gold);
+  color: #000;
   border-radius: 8px;
   text-decoration: none;
   font-size: 1.1rem;
+  font-weight: bold;
 }
 
 /* DESKTOP */
@@ -122,48 +132,48 @@ body {
 <!-- HERO -->
 <section class="hero">
   <img src="logo.png" alt="Bizuterrier">
-  <h1>Biżuteria z charakterem</h1>
-  <p>Wyjątkowe ozdoby tworzone z pasją.</p>
+  <h1>Salon Pielęgnacji Psów</h1>
+  <p>Profesjonalne trymowanie, kąpiele, ozonowanie i porady behawiorystyczne.</p>
 </section>
 
 <!-- KARTY -->
 <section class="cards">
   <div class="card">
-    <h3>Ręczne wykonanie</h3>
-    <p>Każdy produkt powstaje z dbałością o detale.</p>
+    <h3>Trymowanie i Strzyżenie</h3>
+    <p>Stylizacja dopasowana do rasy, sierści i charakteru psa.</p>
   </div>
   <div class="card">
-    <h3>Naturalne materiały</h3>
-    <p>Wybieramy tylko trwałe i bezpieczne surowce.</p>
+    <h3>Kąpiele & Ozonowanie</h3>
+    <p>Dogłębne oczyszczanie, pielęgnacja skóry i redukcja zapachów.</p>
   </div>
   <div class="card">
-    <h3>Indywidualne projekty</h3>
-    <p>Możliwość personalizacji na życzenie.</p>
+    <h3>Porady Behawiorystyczne</h3>
+    <p>Wsparcie w problemach z lękiem, agresją i komunikacją.</p>
   </div>
 </section>
 
 <!-- SLIDER -->
 <section class="slider">
-  <img src="prod1.jpg" alt="">
-  <img src="prod2.jpg" alt="">
-  <img src="prod3.jpg" alt="">
+  <img src="groom1.jpg" alt="">
+  <img src="groom2.jpg" alt="">
+  <img src="groom3.jpg" alt="">
 </section>
 
 <!-- OPINIE -->
 <section class="testimonials">
   <div class="testimonial">
-    „Piękna biżuteria, szybka wysyłka, polecam!”
+    „Mój pies nigdy nie wyglądał tak dobrze. Pełen profesjonalizm!”
   </div>
   <div class="testimonial">
-    „Jakość wykonania zachwyca — wygląda jeszcze lepiej niż na zdjęciach.”
+    „Ozonowanie zrobiło ogromną różnicę — sierść miękka i pachnąca.”
   </div>
 </section>
 
 <!-- KONTAKT -->
 <section class="contact">
-  <a href="tel:+48123456789">Zadzwoń</a>
-  <a href="mailto:kontakt@bizuterrier.pl">Napisz</a>
-  <a href="https://maps.google.com">Mapa dojazdu</a>
+  <a href="tel:+48123456789">Umów wizytę</a>
+  <a href="mailto:kontakt@bizuterrier.pl">Napisz do nas</a>
+  <a href="https://maps.google.com">Zobacz lokalizację</a>
 </section>
 
 </body>
