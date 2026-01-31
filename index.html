@@ -1,22 +1,27 @@
-<nav class="menu">
-  <a href="index.html">Strona główna</a>
-  <a href="onas.html">O nas</a>
-  <a href="galeria.html">Galeria</a>
-  <a href="blog.html">Blog</a>
-  <a href="kontakt.html">Kontakt</a>
-</nav>
 <!DOCTYPE html>
 <html lang="pl">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bizuterrier – Salon Pielęgnacji Psów</title>
+<title>Biżuterrier – Eksperckie trymowanie i pielęgnacja dużych ras</title>
 
 <style>
-  .topbar {
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #000;
+  color: #eee;
+}
+
+:root {
+  --gold: #d4af37;
+}
+
+/* TOP GOLD NAVBAR */
+.topbar {
   width: 100%;
   background: #000;
-  border-bottom: 2px solid #d4af37;
+  border-bottom: 2px solid var(--gold);
   display: flex;
   justify-content: space-around;
   padding: 15px 0;
@@ -26,120 +31,101 @@
 }
 
 .topbar a {
-  color: #d4af37;
+  color: var(--gold);
   text-decoration: none;
   font-size: 1.1rem;
   font-weight: bold;
   padding: 10px 20px;
-  border: 1px solid #d4af37;
+  border: 1px solid var(--gold);
   border-radius: 6px;
   transition: 0.3s;
 }
 
 .topbar a:hover {
-  background: #d4af37;
+  background: var(--gold);
   color: #000;
-}
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #000;
-  color: #eee;
-}
-
-/* GOLD */
-:root {
-  --gold: #d4af37;
 }
 
 /* HERO */
 .hero {
   text-align: center;
-  padding: 40px 20px;
+  padding: 60px 20px 40px;
 }
+
 .hero img {
   width: 90%;
   max-width: 350px;
   border-radius: 12px;
   box-shadow: 0 4px 25px rgba(212,175,55,0.3);
 }
+
 .hero h1 {
   margin-top: 25px;
-  font-size: 2rem;
+  font-size: 2.4rem;
   font-weight: bold;
   color: var(--gold);
 }
+
 .hero p {
   margin-top: 10px;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: #ccc;
 }
 
-/* KARTY */
+/* BUTTON */
+.cta {
+  margin-top: 25px;
+}
+
+.cta a {
+  display: inline-block;
+  padding: 15px 30px;
+  background: var(--gold);
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  transition: 0.3s;
+}
+
+.cta a:hover {
+  background: #fff;
+}
+
+/* SERVICES */
+.services {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.services h2 {
+  color: var(--gold);
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
 .cards {
-  padding: 40px 20px;
   display: grid;
   gap: 20px;
 }
+
 .card {
   background: #111;
-  padding: 20px;
+  padding: 25px;
   border-radius: 12px;
-  text-align: center;
   border: 1px solid rgba(212,175,55,0.3);
   box-shadow: 0 2px 15px rgba(212,175,55,0.15);
 }
+
 .card h3 {
-  margin-bottom: 10px;
-  font-size: 1.2rem;
   color: var(--gold);
+  margin-bottom: 10px;
+  font-size: 1.3rem;
 }
 
-/* SLIDER */
-.slider {
-  display: flex;
-  overflow-x: auto;
-  gap: 15px;
-  padding: 20px;
-  scroll-snap-type: x mandatory;
-}
-.slider img {
-  width: 75%;
-  max-width: 260px;
-  border-radius: 12px;
-  scroll-snap-align: center;
-  box-shadow: 0 4px 20px rgba(212,175,55,0.25);
-}
-
-/* OPINIE */
-.testimonials {
-  padding: 40px 20px;
-}
-.testimonial {
-  background: #111;
-  padding: 20px;
-  border-radius: 12px;
-  margin-bottom: 15px;
-  font-style: italic;
-  border: 1px solid rgba(212,175,55,0.3);
-  box-shadow: 0 2px 15px rgba(212,175,55,0.15);
-}
-
-/* KONTAKT */
-.contact {
-  padding: 40px 20px;
-  text-align: center;
-}
-.contact a {
-  display: block;
-  margin: 10px 0;
-  padding: 15px;
-  background: var(--gold);
-  color: #000;
-  border-radius: 8px;
-  text-decoration: none;
-  font-size: 1.1rem;
-  font-weight: bold;
+.card p {
+  color: #ccc;
 }
 
 /* DESKTOP */
@@ -150,64 +136,52 @@ body {
   .hero img {
     max-width: 420px;
   }
-  .slider img {
-    width: 240px;
-  }
-  .testimonial {
-    max-width: 600px;
-    margin: 0 auto 20px;
-  }
 }
 </style>
 </head>
 
 <body>
 
+<!-- TOP NAV -->
+<nav class="topbar">
+  <a href="index.html">Strona główna</a>
+  <a href="onas.html">O nas</a>
+  <a href="galeria.html">Galeria</a>
+  <a href="blog.html">Blog</a>
+  <a href="kontakt.html">Kontakt</a>
+</nav>
+
 <!-- HERO -->
 <section class="hero">
-  <img src="logo.png" alt="Bizuterrier">
-  <h1>Salon Pielęgnacji Psów</h1>
-  <p>Profesjonalne trymowanie, kąpiele, ozonowanie i porady behawiorystyczne.</p>
-</section>
+  <img src="logo.png" alt="Biżuterrier">
+  <h1>Eksperckie trymowanie i pielęgnacja dużych ras</h1>
+  <p>Butikowy salon SPA dla psów w Chotomowie</p>
 
-<!-- KARTY -->
-<section class="cards">
-  <div class="card">
-    <h3>Trymowanie i Strzyżenie</h3>
-    <p>Stylizacja dopasowana do rasy, sierści i charakteru psa.</p>
-  </div>
-  <div class="card">
-    <h3>Kąpiele & Ozonowanie</h3>
-    <p>Dogłębne oczyszczanie, pielęgnacja skóry i redukcja zapachów.</p>
-  </div>
-  <div class="card">
-    <h3>Porady Behawiorystyczne</h3>
-    <p>Wsparcie w problemach z lękiem, agresją i komunikacją.</p>
+  <div class="cta">
+    <a href="onas.html">Poznaj nas</a>
   </div>
 </section>
 
-<!-- SLIDER -->
-<section class="slider">
-  <img src="groom1.jpg" alt="">
-  <img src="groom2.jpg" alt="">
-  <img src="groom3.jpg" alt="">
-</section>
+<!-- SERVICES -->
+<section class="services">
+  <h2>Nasze specjalizacje</h2>
 
-<!-- OPINIE -->
-<section class="testimonials">
-  <div class="testimonial">
-    „Mój pies nigdy nie wyglądał tak dobrze. Pełen profesjonalizm!”
-  </div>
-  <div class="testimonial">
-    „Ozonowanie zrobiło ogromną różnicę — sierść miękka i pachnąca.”
-  </div>
-</section>
+  <div class="cards">
+    <div class="card">
+      <h3>Trymowanie</h3>
+      <p>Profesjonalne trymowanie z dbałością o anatomię i komfort psa.</p>
+    </div>
 
-<!-- KONTAKT -->
-<section class="contact">
-  <a href="tel:+48123456789">Umów wizytę</a>
-  <a href="mailto:kontakt@bizuterrier.pl">Napisz do nas</a>
-  <a href="https://maps.google.com">Zobacz lokalizację</a>
+    <div class="card">
+      <h3>Duże rasy</h3>
+      <p>Ekspercka pielęgnacja psów wymagających siły, wiedzy i doświadczenia.</p>
+    </div>
+
+    <div class="card">
+      <h3>SPA & Ozonowanie</h3>
+      <p>Relaksujące kąpiele, ozonowanie i pielęgnacja premium.</p>
+    </div>
+  </div>
 </section>
 
 </body>
